@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head : 사용자에게 보여지지 않지만 정보의 정의를 위한 공간 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <meta name="title" content="아이엠 그라운드">
+  <meta name="description" content="나의 첫 자기소개 페이지입니다.">
+  <meta name="author" content="Kookmin Univ">
+  <meta name="keywords" content="자기소개, 국민대, 경영대학원">
+  <meta property="og:title" content="아이엠그라운드">
+  <meta property="og:description" content="나의 첫 자기소개 페이지입니다.">
+  <meta property="og:image"
+    content="https://images.pexels.com/photos/4224305/pexels-photo-4224305.jpeg?auto=compress&cs=tinysrgb&w=600">
+  <link href="./style.css" rel="stylesheet" , type="text/css">
+  <style>
+    p {
+      font-size: 20px;
+    }
+  </style>
+  <script>
+      //alert('이 컴퓨는 해킹되었습니다.');
+
+  </script>
+  <script src="./script.js"></script>
+  <!--width=device-width : 사용자 기기에 맞는 가로 길이 설정-->
+  <!--initial-scale= : 기본배율-->
+</head>
+<!--body : 사용자에게 보여질 정보를 정의하는 공간-->
+
+<body>
+  <h1>자기소개 페이지</h1>
+  <h2>자기소개 페이지</h2>
+  <h3>● 자기소개</h3>
+  <h3>● 직업</h3>
+  <h3>● 취미/특기</h3>
+  <h1>자기소개 본문</h1>
+  <p>본문입니당</p>
+  <p>
+    첫번째 문장입니다.</br>
+    두번째 문장입니다.</br>
+    세번째 문장입니다.</br>
+  </p>
+
+  <!--list item-->
+  <h2>저녁메뉴 후보군</h2>
+  <!--ol /reversed = 숫자 및 순서 거꾸로-->
+  <!-- <ol type="I" start="13"> = 순서매김 번호 타입 설정, 시작 숫자-->
+  <!-- 순서가 매겨져 있는 태그는 <P>로 쓰지 말고 <OL>로 써라-->
+  <ol type="I" start="13">
+   <li>삼겹살</li>
+   <li>살치살</li>
+   <li>갈빗살</li>
+  </ol>
+
+  <h2>좋아하는 동물</h2>
+  <ul>
+   <li>강아지</li>
+   <li>고양이</li>
+   <li>햄스터</li>
+  </ul>
+
+  
+ <style>
+ .bg-red  {
+   background-color: red;
+ }  
+ </style> 
+  
+ <div id="link" class="bg-red font-link" >
+   <!--.bg-red과 같이 점이 붙어있으면 클래스임-->
+  <!-- id : 태그가 가질 수 있는 페이지 내의 유일한 이름-->
+  <!-- calss : 미리 정의 된 스타일속성의 이름-->
+  <a href="https://festa.io/events/4910">>기본링크</a></br>
+  <a href="https://festa.io/events/4910" target="_blank">>새탭 열기</a></br>
+  <a href="https://festa.io/events/4910" target="_self">>현재창 열기</a></br>
+  </div> 
+
+  <!--이미지 src에서 ./으로 정확한 경로를 불러올 수 있음 alt는 대체 텍스트임-->
+  <!--닫는거 없는 한줄로 코드 짤때는 끝에 /를 넣어줘라-->
+  <img src="./rabbit.jpeg" alt="토끼입니다." width="200"/>
+
+<picture>
+<source srcset="./taxi.jpeg" media="(max-width: 480px)"/>
+<source srcset="/tea.jpeg" media="(min-width: 480px)"/>
+  <img src="taxi.jpeg" width="300">
+  
+</picture>
+  
+  <video width="340" height="360" controls="controls">
+    <source src="/human.mp4" type="video/mp4"/>
+</video>
+  
+<figure>
+  <img src="./tea.jpeg" alt="차입니다." width="200">
+  <figcaption>
+    <h2>이 그림은 차 그림입니다.</h2>
+  </figcaption>
+</figure>
+
+  <p>
+  <i>안녕하세요</i> 이 <b>편지는</b> <span style="font size:100px;">1950년 영국</span>에서 시작 되어 전세계를 돌아 <strong>당신에게 <em>전달 되었습니다.</em></strong>
+ </p>
+
+</body>
+
+</html>
