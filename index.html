@@ -26,6 +26,7 @@
       <!--섹션 태그는 제목 태그가 꼭 필요함, h2 등등 -->
       
     </header>
+    
     <main>
       <section>
         <h2>headline</h2>
@@ -74,20 +75,67 @@
         <table>
           <thead>
             <tr>
-              <th>2020</th>
+              <th>구분</th>
               <th>2021</th>
               <th>2022</th>
               <th>2023</th>
             </tr>
           </thead>
+          
           <tbody>
-            
+            <tr>
+              <td>자동차</td>
+              <td>100</td>
+              <td>120</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>모니터</td>
+              <td>125</td>
+              <td rowspan="1">262</td> <!--rowspan 확인 -->
+              <td>876</td>
+            </tr>
+            <tr>
+              <td>에어컨</td>
+              <td>300</td>
+              <td>301</td>
+              <td>402</td>
+            </tr>
           </tbody>
+          
           <tfoot>
-            
+            <tr>
+              <td colspan="3">합계</td>
+               <td>1000</td>
+            </tr>
           </tfoot>
+          
         </table>
+        
       </section>
+      
+      <section>
+        <!--form interaction -->
+        <form>
+          <form action="/sign up" method="POST">
+            <p>Username</p>
+            <input name="username" type="text" maxlength="10" size="10">
+            <datalist id = "name">
+              <option value="JohnDoe"></option>
+              <option value="JaneDoe"></option>
+              <option value="JaneDoe"></option>
+            </datalist>
+            
+            <label for="u-email">Email</label>
+            <input id="u-email" name="email" type="email">
+            <label for="u-pw">password</label>
+            <input id="u-pw" name="password" type="password">
+            <label for="u-birth">Birthday</label>
+            <input id="u-birth"name="birthday" type="date"> 
+            <input type="submit">
+            <button type="reset">초기화</button>
+            </form>
+     </section>
     </main>
 
     <!--id : 특정 요소에 이름 부여하기(unique), class :스타일속성 활용을 위한 이름 -->
